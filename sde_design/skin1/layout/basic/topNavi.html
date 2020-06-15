@@ -1,7 +1,13 @@
 	<div class='Dr_Top_Bg'>
         <div class='Dr_Top_Wrap'>
             <div class='Dr_Top_Inner'>
-                <div class='Dr_Top_L bob'>
+
+
+                <div class='Dr_Top_L'>
+									<h1 module="Layout_LogoTop">
+											<!--@css(/css/module/layout/logotop.css)-->
+											<a href="/index.html"><img src="/img/images/Text_logo.png" alt="{$mall_name}" /></a>
+									</h1>
                     <ul>
                         <li><a id="leehyuk" href='/shopinfo/company.html'>Company</a></li>
                         <li><a href='/product/list.html?cate_no=24'>SHOP</a>
@@ -17,29 +23,29 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href=''>리혁새기</a></li>
+                        <li><a href=''>Community</a></li>
                     </ul>
                 </div>
-                <div class='Dr_Top_M'>
-                    <h1 module="Layout_LogoTop">
-                        <!--@css(/css/module/layout/logotop.css)-->
-                        <a href="/index.html"><img src="{$logo}" alt="{$mall_name}" /></a>
-                    </h1>
-                </div>
+								<div class="table_c">
+									<div class="search" module="Layout_SearchHeader">
+											{$form.keyword}
+											<button type="button" class="btnSearch" onclick="{$action_search_submit}">검색</button>
+									</div>
+								</div>
                 <div class='Dr_Top_R'>
                     <ul module="Layout_stateLogon">
-                        <li><a href='/member/modify.html'>Myinfuck</a></li>
-                        <li><a href='{$action_logout}'>LogOut</a></li>
-                        <li><a href='/order/basket.html'>Basket<span class="count {$basket_count_display|display}"><span>{$basket_count}</span></span></a></li>
-                        <li><a href='/myshop/order/list.html'>Order</a></li>
-                        <li><a href='/myshop/index.html'>MyShop</a></li>
+                        <li><a href='/member/modify.html'>내정보</a></li>
+                        <li><a href='{$action_logout}'>로그아웃</a></li>
+                        <li><a href='/order/basket.html'>장바구나<span class="count {$basket_count_display|display}"><span>{$basket_count}</span></span></a></li>
+                        <li><a href='/myshop/order/list.html'>주문</a></li>
+                        <li><a href='/myshop/index.html'>마이 쇼핑</a></li>
                     </ul>
                     <ul module="Layout_statelogoff">
-                        <li><a href='/member/login.html'>Login</a></li>
-                        <li><a href='/member/join.html'>Join</a></li>
-                        <li><a href='/order/basket.html'>Basket<span class="count {$basket_count_display|display}"><span>{$basket_count}</span></span></a></li>
-                        <li><a href='/myshop/order/list.html'>Order</a></li>
-                        <li><a href='/myshop/index.html'>MyShop</a></li>
+                        <li><a href='/member/login.html'>로그인</a></li>
+                        <li><a href='/member/join.html'>회원가입</a></li>
+                        <li><a href='/order/basket.html'>장바구니<span class="count {$basket_count_display|display}"><span>{$basket_count}</span></span></a></li>
+                        <li><a href='/myshop/order/list.html'>주문</a></li>
+                        <li><a href='/myshop/index.html'>마이 쇼핑</a></li>
                     </ul>
                 </div>
             </div>
