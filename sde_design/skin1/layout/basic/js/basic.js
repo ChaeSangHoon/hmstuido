@@ -50,7 +50,6 @@
  * 문서 구동후 시작
  */
 
- // 스크립트 깃허브 테스트
 $(document).ready(function(){
     $('#banner:visible, #quick:visible').floatBanner();
 
